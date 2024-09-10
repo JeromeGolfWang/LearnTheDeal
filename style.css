@@ -5,19 +5,7 @@
 }
 
 :root {
-  --logo-size: 50px; /* Default size of the logo, you can easily adjust this */
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  color: #fff;
-  background-color: #000;
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+  --logo-size: 80px; /* Increased logo size */
 }
 
 header {
@@ -26,56 +14,38 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically centers the logo */
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .logo-img {
-  width: var(--logo-size); /* Uses CSS variable for easy logo resizing */
+  width: var(--logo-size); /* Adjusted to 80px for better visibility */
 }
 
 .nav-links {
   display: flex;
   gap: 20px;
-}
-
-.nav-links li {
-  list-style: none;
-}
-
-.cta-button {
-  background-color: #e63946;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #d62828;
+  align-items: center; /* Centers the links vertically with the logo */
 }
 
 .hero {
   background: url('Learn the Deal logo.png') no-repeat center center/cover, linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
   color: #fff;
   text-align: center;
-  padding: 100px 20px 150px; /* Adjusted padding to move content lower */
+  padding: 150px 20px;
   margin-top: 80px;
 }
 
 .hero-content {
   max-width: 600px;
   margin: 0 auto;
-  padding-top: 50px; /* Adds space at the top of the hero content */
+  padding-top: 50px;
 }
 
 .learn-more {
-  margin-top: 20px; /* Moves the Learn More button down for better spacing */
+  margin-top: 30px; /* Increased margin for better spacing */
 }
 
 .features-section, .program-section, footer {
