@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --logo-size: 50px; /* Default size of the logo, you can easily adjust this */
+}
+
 body {
   font-family: 'Inter', sans-serif;
   color: #fff;
@@ -32,7 +36,7 @@ header {
 }
 
 .logo-img {
-  width: 50px;
+  width: var(--logo-size); /* Uses CSS variable for easy logo resizing */
 }
 
 .nav-links {
@@ -60,13 +64,18 @@ header {
   background: url('Learn the Deal logo.png') no-repeat center center/cover, linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
   color: #fff;
   text-align: center;
-  padding: 150px 20px;
+  padding: 100px 20px 150px; /* Adjusted padding to move content lower */
   margin-top: 80px;
 }
 
 .hero-content {
   max-width: 600px;
   margin: 0 auto;
+  padding-top: 50px; /* Adds space at the top of the hero content */
+}
+
+.learn-more {
+  margin-top: 20px; /* Moves the Learn More button down for better spacing */
 }
 
 .features-section, .program-section, footer {
