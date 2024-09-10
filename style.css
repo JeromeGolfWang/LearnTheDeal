@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  background-color: #000;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: #000;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  width: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.cta-button {
+  background-color: #e63946;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #d62828;
+}
+
+.hero {
+  background: url('Learn the Deal logo.png') no-repeat center center/cover, linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  color: #fff;
+  text-align: center;
+  padding: 150px 20px;
+  margin-top: 80px;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features-section, .program-section, footer {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #222;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.feature {
+  max-width: 300px;
+}
+
+h2, h3 {
+  color: #e63946;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 15px;
+  border: none;
+  background-color: #e63946;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: #d62828;
+}
