@@ -4,14 +4,9 @@
   box-sizing: border-box;
 }
 
-:root {
-  --logo-size: 100px; /* Default size of the logo, you can easily adjust this */
-}
-
 body {
   font-family: 'Inter', sans-serif;
-  color: #fff;
-  background-color: #000;
+  color: #333;
   line-height: 1.6;
 }
 
@@ -21,7 +16,7 @@ a {
 }
 
 header {
-  background-color: #000;
+  background-color: #fff;
   padding: 20px;
   position: fixed;
   width: 100%;
@@ -35,8 +30,9 @@ header {
   align-items: center;
 }
 
-.logo-img {
-  width: var(--logo-size); /* Uses CSS variable for easy logo resizing */
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .nav-links {
@@ -49,7 +45,7 @@ header {
 }
 
 .cta-button {
-  background-color: #e63946;
+  background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -57,11 +53,11 @@ header {
 }
 
 .cta-button:hover {
-  background-color: #d62828;
+  background-color: #0056b3;
 }
 
 .hero {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); /* Keeps the dark gradient without the logo */
+  background: linear-gradient(135deg, #007bff, #0056b3);
   color: #fff;
   text-align: center;
   padding: 150px 20px;
@@ -71,17 +67,11 @@ header {
 .hero-content {
   max-width: 600px;
   margin: 0 auto;
-  padding-top: 50px; /* Adds space at the top of the hero content */
-}
-
-.learn-more {
-  margin-top: 20px; /* Moves the Learn More button down for better spacing */
 }
 
 .features-section, .program-section, footer {
   padding: 100px 20px;
   text-align: center;
-  background-color: #222;
 }
 
 .features {
@@ -92,10 +82,6 @@ header {
 
 .feature {
   max-width: 300px;
-}
-
-h2, h3 {
-  color: #e63946;
 }
 
 .contact-form {
@@ -115,12 +101,12 @@ h2, h3 {
 .contact-form button {
   padding: 15px;
   border: none;
-  background-color: #e63946;
+  background-color: #007bff;
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .contact-form button:hover {
-  background-color: #d62828;
+  background-color: #0056b3;
 }
