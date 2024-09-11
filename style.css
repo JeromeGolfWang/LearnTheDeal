@@ -87,7 +87,7 @@ header {
 .partners-section {
   padding: 50px 20px;
   text-align: center;
-  background-color: #f9f9f9; /* Optional: Background color for contrast */
+  background-color: #fff; /* Set to white to match other sections */
 }
 
 .partner-logos {
