@@ -64,6 +64,27 @@ header {
   margin-top: 80px;
 }
 
+.hero-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+.logo-container {
+  flex: 0 0 20%;
+  margin-right: 2em; /* Adjust spacing between logo and text */
+}
+
+.hero-logo {
+  max-width: 100%; /* Ensures the logo is responsive */
+  height: auto;
+}
+
+.hero-content {
+  flex: 1;
+}
+
 .hero-content {
   max-width: 600px;
   margin: 0 auto;
