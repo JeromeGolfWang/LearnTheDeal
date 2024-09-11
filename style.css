@@ -83,35 +83,42 @@ header {
 .feature {
   max-width: 300px;
 }
-
 .partners-section {
   padding: 50px 20px;
   text-align: center;
-  background-color: #fff; /* Set to white to match other sections */
+  background-color: #fff; /* Ensures the background remains white */
 }
 
 .partner-logos {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Allows logos to wrap if the screen is too narrow */
+  flex-wrap: wrap;
   gap: 40px; /* Space between the logos */
 }
 
+/* Control the size of logos on larger screens */
 .partner-logos img {
-  max-width: 100px; /* Limit the logo width */
+  max-width: 150px; /* Adjusted logo size for larger screens */
   height: auto;
-  transition: transform 0.3s; /* Smooth transition for hover effect */
+  transition: transform 0.3s; /* Smooth hover effect */
 }
 
 .partner-logos img:hover {
   transform: scale(1.1); /* Slightly enlarge the logo on hover */
 }
 
-/* Responsive Design */
+/* Media Query: Adjust the logo size for desktop */
+@media only screen and (min-width: 1024px) {
+  .partner-logos img {
+    max-width: 200px; /* Larger logo size on desktop */
+  }
+}
+
+/* Media Query: Adjust the logo size for mobile */
 @media only screen and (max-width: 600px) {
   .partner-logos img {
-    max-width: 150px; /* Adjust the size for mobile devices */
+    max-width: 120px; /* Smaller logo size on mobile devices */
   }
 }
 
