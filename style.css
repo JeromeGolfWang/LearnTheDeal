@@ -30,9 +30,9 @@ header {
   align-items: center;
 }
 
-.logo a {
-  font-size: 1.5rem;
-  font-weight: bold;
+.logo-img {
+  width: 150px; /* Adjust the size based on how large you want it */
+  height: auto; /* Ensures the logo maintains its aspect ratio */
 }
 
 .nav-links {
