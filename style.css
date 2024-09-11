@@ -84,6 +84,37 @@ header {
   max-width: 300px;
 }
 
+.partners-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* Optional: Background color for contrast */
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allows logos to wrap if the screen is too narrow */
+  gap: 40px; /* Space between the logos */
+}
+
+.partner-logos img {
+  max-width: 100px; /* Limit the logo width */
+  height: auto;
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.partner-logos img:hover {
+  transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  .partner-logos img {
+    max-width: 150px; /* Adjust the size for mobile devices */
+  }
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
