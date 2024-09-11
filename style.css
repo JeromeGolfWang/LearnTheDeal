@@ -31,9 +31,8 @@ header {
 }
 
 .logo a {
-  font-size: 1.5em;
-  font-weight: 700;
-  color: #333; /* Adjust color to match the rest of the design */
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .nav-links {
@@ -65,26 +64,7 @@ header {
   margin-top: 80px;
 }
 
-/* New CSS for logo and content alignment */
-.hero-content-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2em;
-}
-
-.logo-container {
-  flex: 0 0 35%; /* Adjust width as needed */
-  margin-right: 2em; /* Spacing between logo and text */
-}
-
-.hero-logo {
-  max-width: 100%; /* Ensures the logo is responsive */
-  height: auto;
-}
-
 .hero-content {
-  flex: 1;
   max-width: 600px;
   margin: 0 auto;
 }
