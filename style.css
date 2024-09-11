@@ -30,9 +30,10 @@ header {
   align-items: center;
 }
 
-.logo-img {
-  width: 50px; /* Adjust the size as needed */
-  height: auto;
+.logo a {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #333; /* Adjust color to match the rest of the design */
 }
 
 .nav-links {
