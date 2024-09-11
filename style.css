@@ -64,6 +64,7 @@ header {
   margin-top: 80px;
 }
 
+/* New CSS for logo and content alignment */
 .hero-content-wrapper {
   display: flex;
   align-items: center;
@@ -72,8 +73,8 @@ header {
 }
 
 .logo-container {
-  flex: 0 0 20%;
-  margin-right: 2em; /* Adjust spacing between logo and text */
+  flex: 0 0 35%; /* Adjust width as needed */
+  margin-right: 2em; /* Spacing between logo and text */
 }
 
 .hero-logo {
@@ -83,9 +84,6 @@ header {
 
 .hero-content {
   flex: 1;
-}
-
-.hero-content {
   max-width: 600px;
   margin: 0 auto;
 }
