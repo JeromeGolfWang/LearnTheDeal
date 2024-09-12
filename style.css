@@ -52,19 +52,6 @@ header {
   transition: background-color 0.3s;
 }
 
-/* Adding specific margin to the 'Learn More' and 'Sign Up' buttons */
-.hero-content .cta-button {
-  margin-top: 30px; /* Adds space above the 'Learn More' button */
-}
-
-.program-section .cta-button {
-  margin-top: 30px; /* Adds space above the 'Sign Up' button */
-}
-
-.cta-button:hover {
-  background-color: #0056b3;
-}
-
 .hero {
   background: linear-gradient(135deg, #007bff, #0056b3);
   color: #fff;
@@ -91,6 +78,13 @@ header {
 
 .feature {
   max-width: 300px;
+}
+
+/* Partners Section Heading Styling */
+.partners-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px; /* Space between heading and logos */
+  color: #333;
 }
 
 .partners-section {
