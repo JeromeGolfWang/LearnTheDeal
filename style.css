@@ -31,8 +31,8 @@ header {
 }
 
 .logo-img {
-  width: 150px; /* Adjust the size based on how large you want it */
-  height: auto; /* Ensures the logo maintains its aspect ratio */
+  width: 150px;
+  height: auto;
 }
 
 .nav-links {
@@ -52,12 +52,23 @@ header {
   transition: background-color 0.3s;
 }
 
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
 .hero {
   background: linear-gradient(135deg, #007bff, #0056b3);
   color: #fff;
   text-align: center;
   padding: 150px 20px;
   margin-top: 80px;
+}
+
+/* Container for sections to limit text width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .hero-content {
@@ -80,17 +91,17 @@ header {
   max-width: 300px;
 }
 
-/* Partners Section Heading Styling */
+/* Partners Section Styling */
 .partners-section h2 {
   font-size: 1.8rem;
-  margin-bottom: 30px; /* Space between heading and logos */
+  margin-bottom: 30px;
   color: #333;
 }
 
 .partners-section {
   padding: 50px 20px;
   text-align: center;
-  background-color: #fff; /* Ensures the background remains white */
+  background-color: #fff;
 }
 
 .partner-logos {
@@ -98,31 +109,28 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px; /* Space between the logos */
+  gap: 40px;
 }
 
-/* Control the size of logos on larger screens */
 .partner-logos img {
-  max-width: 150px; /* Adjusted logo size for larger screens */
+  max-width: 150px;
   height: auto;
-  transition: transform 0.3s; /* Smooth hover effect */
+  transition: transform 0.3s;
 }
 
 .partner-logos img:hover {
-  transform: scale(1.1); /* Slightly enlarge the logo on hover */
+  transform: scale(1.1);
 }
 
-/* Media Query: Adjust the logo size for desktop */
 @media only screen and (min-width: 1024px) {
   .partner-logos img {
-    max-width: 200px; /* Larger logo size on desktop */
+    max-width: 200px;
   }
 }
 
-/* Media Query: Adjust the logo size for mobile */
 @media only screen and (max-width: 600px) {
   .partner-logos img {
-    max-width: 120px; /* Smaller logo size on mobile devices */
+    max-width: 120px;
   }
 }
 
@@ -153,16 +161,16 @@ header {
   background-color: #0056b3;
 }
 
-/* Added for the image under 'Our Training Program' */
+/* For the image under 'Our Training Program' */
 :root {
-  --program-image-width: 600px; /* Default width for the program image */
+  --program-image-width: 600px;
 }
 
 .program-image {
   display: block;
-  width: var(--program-image-width); /* Control image size using the CSS variable */
-  max-width: 100%; /* Ensure the image is responsive */
+  width: var(--program-image-width);
+  max-width: 100%;
   height: auto;
-  margin: 20px auto; /* Add space around the image */
-  border-radius: 8px; /* Optional: Rounded corners for the image */
+  margin: 20px auto;
+  border-radius: 8px;
 }
