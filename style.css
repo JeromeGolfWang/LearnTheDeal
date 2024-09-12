@@ -50,7 +50,15 @@ header {
   padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s;
-  margin-top: 20px; /* Add space above the button */
+}
+
+/* Adding specific margin to the 'Learn More' and 'Sign Up' buttons */
+.hero-content .cta-button {
+  margin-top: 20px; /* Adds space above the 'Learn More' button */
+}
+
+.program-section .cta-button {
+  margin-top: 20px; /* Adds space above the 'Sign Up' button */
 }
 
 .cta-button:hover {
