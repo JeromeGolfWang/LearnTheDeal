@@ -54,11 +54,11 @@ header {
 
 /* Adding specific margin to the 'Learn More' and 'Sign Up' buttons */
 .hero-content .cta-button {
-  margin-top: 20px; /* Adds space above the 'Learn More' button */
+  margin-top: 30px; /* Adds space above the 'Learn More' button */
 }
 
 .program-section .cta-button {
-  margin-top: 20px; /* Adds space above the 'Sign Up' button */
+  margin-top: 30px; /* Adds space above the 'Sign Up' button */
 }
 
 .cta-button:hover {
