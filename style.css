@@ -92,6 +92,7 @@ header {
 .feature {
   max-width: 300px;
 }
+
 .partners-section {
   padding: 50px 20px;
   text-align: center;
@@ -156,4 +157,18 @@ header {
 
 .contact-form button:hover {
   background-color: #0056b3;
+}
+
+/* Added for the image under 'Our Training Program' */
+:root {
+  --program-image-width: 600px; /* Default width for the program image */
+}
+
+.program-image {
+  display: block;
+  width: var(--program-image-width); /* Control image size using the CSS variable */
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto;
+  margin: 20px auto; /* Add space around the image */
+  border-radius: 8px; /* Optional: Rounded corners for the image */
 }
