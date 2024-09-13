@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1E2A38"/>
+
+  <!-- Title -->
+  <text x="50%" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#FFFFFF" font-weight="bold">
+    Average Salaries of Gambling Dealers in California Cities
+  </text>
+
+  <!-- Y-Axis Labels and Bars -->
+  <g transform="translate(200, 100)">
+    <!-- Y-Axis Labels -->
+    <text x="0" y="20" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">San Jose</text>
+    <text x="0" y="60" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">San Francisco</text>
+    <text x="0" y="100" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">San Diego</text>
+    <text x="0" y="140" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Los Angeles</text>
+    <text x="0" y="180" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Sacramento</text>
+    <text x="0" y="220" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Sonora</text>
+    <text x="0" y="260" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">San Bernadino</text>
+    <text x="0" y="300" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Lodi</text>
+    <text x="0" y="340" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Eureka</text>
+    <text x="0" y="380" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Turlock</text>
+    <text x="0" y="420" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Modesto</text>
+    <text x="0" y="460" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Stockton</text>
+    <text x="0" y="500" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Merced</text>
+
+    <!-- Bars and Salary Labels -->
+    <!-- Scaling: $1,000 = 7px -->
+    <!-- Maximum salary: San Jose $134,497 → ~941px -->
+    
+    <!-- San Jose -->
+    <rect x="10" y="10" width="941" height="30" fill="#4CAF50" />
+    <text x="955" y="30" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$134,497</text>
+
+    <!-- San Francisco -->
+    <rect x="10" y="50" width="819" height="30" fill="#4CAF50" />
+    <text x="829" y="70" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$117,129</text>
+
+    <!-- San Diego -->
+    <rect x="10" y="90" width="636" height="30" fill="#4CAF50" />
+    <text x="652" y="110" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$90,900</text>
+
+    <!-- Los Angeles -->
+    <rect x="10" y="130" width="624" height="30" fill="#4CAF50" />
+    <text x="638" y="150" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$89,182</text>
+
+    <!-- Sacramento -->
+    <rect x="10" y="170" width="621" height="30" fill="#4CAF50" />
+    <text x="635" y="190" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$88,709</text>
+
+    <!-- Sonora -->
+    <rect x="10" y="210" width="620" height="30" fill="#4CAF50" />
+    <text x="634" y="230" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$88,636</text>
+
+    <!-- San Bernadino -->
+    <rect x="10" y="250" width="612" height="30" fill="#4CAF50" />
+    <text x="626" y="270" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$87,404</text>
+
+    <!-- Lodi -->
+    <rect x="10" y="290" width="590" height="30" fill="#4CAF50" />
+    <text x="604" y="310" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$84,350</text>
+
+    <!-- Eureka -->
+    <rect x="10" y="330" width="563" height="30" fill="#4CAF50" />
+    <text x="577" y="350" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$80,425</text>
+
+    <!-- Turlock -->
+    <rect x="10" y="370" width="557" height="30" fill="#4CAF50" />
+    <text x="571" y="390" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$79,658</text>
+
+    <!-- Modesto -->
+    <rect x="10" y="410" width="525" height="30" fill="#4CAF50" />
+    <text x="539" y="430" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$74,979</text>
+
+    <!-- Stockton -->
+    <rect x="10" y="450" width="521" height="30" fill="#4CAF50" />
+    <text x="535" y="470" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$74,424</text>
+
+    <!-- Merced -->
+    <rect x="10" y="490" width="482" height="30" fill="#4CAF50" />
+    <text x="496" y="510" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$68,851</text>
+  </g>
+
+  <!-- X-Axis -->
+  <line x1="200" y1="620" x2="1200" y2="620" stroke="#FFFFFF" stroke-width="2"/>
+  
+  <!-- X-Axis Labels -->
+  <g transform="translate(200, 620)">
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$0</text>
+    <text x="200" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$20k</text>
+    <text x="400" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$40k</text>
+    <text x="600" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$60k</text>
+    <text x="800" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$80k</text>
+    <text x="1000" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$100k</text>
+    <text x="1200" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">$120k</text>
+  </g>
+
+  <!-- Supporting Text -->
+  <text x="50%" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF">
+    Source: www.comparably.com
+  </text>
+
+</svg>
