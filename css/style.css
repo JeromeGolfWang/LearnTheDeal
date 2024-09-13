@@ -291,7 +291,7 @@ header {
   gap: 30px;
 }
 
-.testimonial {
+.testimonials .testimonial {
   max-width: 500px;
   background-color: #f1f1f1;
   padding: 25px;
@@ -299,13 +299,13 @@ header {
   position: relative;
 }
 
-.testimonial p {
+.testimonials .testimonial p {
   font-style: italic;
   color: #555;
   margin-bottom: 15px;
 }
 
-.testimonial h4 {
+.testimonials .testimonial h4 {
   font-weight: 600;
   color: #333;
 }
@@ -424,4 +424,55 @@ footer {
   .responsive-svg {
     max-width: 100%;
   }
+}
+
+/* =========================
+   Gallery Styling
+   ========================= */
+
+/* Gallery Container */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Thumbnail Container */
+.thumbnail {
+  text-align: center;
+}
+
+/* Thumbnail Images */
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s, opacity 0.3s;
+  cursor: pointer;
+}
+
+.thumbnail img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Thumbnail Captions */
+.thumbnail p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Lightbox2 Customizations (Optional) */
+
+/* Change Lightbox overlay color */
+.lb-overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Customize Lightbox caption */
+.lb-caption {
+  font-size: 1.1rem;
+  color: #fff;
 }

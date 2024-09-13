@@ -20,8 +20,14 @@
     referrerpolicy="no-referrer"
   />
   
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  
   <!-- Defer JavaScript to improve load times -->
   <script src="js/script.js" defer></script>
+  
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" defer></script>
   
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -126,27 +132,35 @@
       </div>
     </section>
 
-    <!-- Job Growth States Section -->
-    <section id="job-growth-states" class="svg-section">
+    <!-- Data Visualizations Section -->
+    <section id="data-visualizations" class="data-section">
       <div class="container">
-        <h2>Fastest Job Growth States for Gambling Dealers</h2>
-        <img src="images/fastest-dealer-job-growth-states.svg" alt="Bar chart showing fastest job growth states for gambling dealers" class="responsive-svg" loading="lazy">
-      </div>
-    </section>
-
-    <!-- Average Salaries by City Section -->
-    <section id="average-salaries" class="svg-section">
-      <div class="container">
-        <h2>Average Salaries of Gambling Dealers by City</h2>
-        <img src="images/carder-dealer-average-salaries-by-city.svg" alt="Horizontal bar chart showing average salaries of gambling dealers by city" class="responsive-svg" loading="lazy">
-      </div>
-    </section>
-
-    <!-- Job Growth Slide Section -->
-    <section id="job-growth-slide" class="svg-section">
-      <div class="container">
-        <h2>Dealer Job Growth Overview</h2>
-        <img src="images/dealer-job-growth-slide.svg" alt="Slide illustrating job growth for dealers" class="responsive-svg" loading="lazy">
+        <h2>Data Visualizations</h2>
+        <div class="gallery">
+          <!-- Thumbnail 1 -->
+          <div class="thumbnail">
+            <a href="images/fastest-dealer-job-growth-states.svg" data-lightbox="data-visualizations" data-title="Fastest Job Growth States for Gambling Dealers">
+              <img src="images/fastest-dealer-job-growth-states.svg" alt="Fastest Job Growth States" class="preview-img" loading="lazy">
+            </a>
+            <p>Fastest Job Growth States for Gambling Dealers</p>
+          </div>
+          
+          <!-- Thumbnail 2 -->
+          <div class="thumbnail">
+            <a href="images/carder-dealer-average-salaries-by-city.svg" data-lightbox="data-visualizations" data-title="Average Salaries of Gambling Dealers by City">
+              <img src="images/carder-dealer-average-salaries-by-city.svg" alt="Average Salaries by City" class="preview-img" loading="lazy">
+            </a>
+            <p>Average Salaries of Gambling Dealers by City</p>
+          </div>
+          
+          <!-- Thumbnail 3 -->
+          <div class="thumbnail">
+            <a href="images/dealer-job-growth-slide.svg" data-lightbox="data-visualizations" data-title="Dealer Job Growth Overview">
+              <img src="images/dealer-job-growth-slide.svg" alt="Dealer Job Growth Overview" class="preview-img" loading="lazy">
+            </a>
+            <p>Dealer Job Growth Overview</p>
+          </div>
+        </div>
       </div>
     </section>
 
