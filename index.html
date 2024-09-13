@@ -8,47 +8,53 @@
   <title>Learn the Deal - Dealer Training Program</title>
   
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
   
-  <!-- Font Awesome for Icons -->
-  <script src="https://kit.fontawesome.com/7dbdcd1376.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome via CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pOaHaa0vTqK2ON2wEvBqXjhLEcG1q9dnN9A9aIFU0hWQxGxXjOZj/FpShfV1vKx61Zb+Jl/lbVov6w3+V4NeOg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   
   <!-- Defer JavaScript to improve load times -->
-  <script src="script.js" defer></script>
+  <script src="js/script.js" defer></script>
   
   <!-- Schema.org Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "name": "Learn the Deal",
-  "url": "https://learnthedeal.pages.dev/",
-  "logo": "https://learnthedeal.pages.dev/learn-the-deal-logo.png",
-  "description": "Specialized dealer training program for the Gaming & Hospitality industry.",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "email": "info@learnthedeal.com",
-    "contactType": "Customer Service",
-    "telephone": "+1-209-801-2533",
-    "areaServed": "US",
-    "availableLanguage": ["English"]
-  },
-  "sameAs": [
-    "https://facebook.com/learnthedeal",
-    "https://twitter.com/learnthedeal",
-    "https://instagram.com/learnthedeal"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "123 Casino Ave",
-    "addressLocality": "Las Vegas",
-    "addressRegion": "NV",
-    "postalCode": "89109",
-    "addressCountry": "US"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Learn the Deal",
+    "url": "https://learnthedeal.pages.dev/",
+    "logo": "https://learnthedeal.pages.dev/images/learn-the-deal-logo.png",
+    "description": "Specialized dealer training program for the Gaming & Hospitality industry.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@learnthedeal.com",
+      "contactType": "Customer Service",
+      "telephone": "+1-209-801-2533",
+      "areaServed": "US",
+      "availableLanguage": ["English"]
+    },
+    "sameAs": [
+      "https://facebook.com/learnthedeal",
+      "https://twitter.com/learnthedeal",
+      "https://instagram.com/learnthedeal"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Casino Ave",
+      "addressLocality": "Las Vegas",
+      "addressRegion": "NV",
+      "postalCode": "89109",
+      "addressCountry": "US"
+    }
   }
-}
-</script>
+  }
   </script>
 </head>
 <body>
@@ -56,7 +62,7 @@
     <nav class="navbar" role="navigation" aria-label="Main Navigation">
       <div class="logo">
         <a href="#">
-          <img src="learn-the-deal-logo.png" alt="Learn the Deal Logo" class="logo-img">
+          <img src="images/learn-the-deal-logo.png" alt="Learn the Deal Logo" class="logo-img">
         </a>
       </div>
       <ul class="nav-links">
@@ -115,8 +121,32 @@
       <div class="container">
         <h2>Bridging Opportunity for Successful Graduates</h2>
         <p>Our comprehensive program covers blackjack and other popular casino games, preparing graduates for entry into a globally growing industry that offers built-in job security through live-action and trust.</p>
-        <img src="dealer-program.png" alt="Learn The Deal Training Program" class="program-image" loading="lazy">
+        <img src="images/dealer-program.png" alt="Learn The Deal Training Program" class="program-image" loading="lazy">
         <a href="#contact" class="cta-button">Enroll Now</a>
+      </div>
+    </section>
+
+    <!-- Job Growth States Section -->
+    <section id="job-growth-states" class="svg-section">
+      <div class="container">
+        <h2>Fastest Job Growth States for Gambling Dealers</h2>
+        <img src="images/fastest-dealer-job-growth-states.svg" alt="Bar chart showing fastest job growth states for gambling dealers" class="responsive-svg" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Average Salaries by City Section -->
+    <section id="average-salaries" class="svg-section">
+      <div class="container">
+        <h2>Average Salaries of Gambling Dealers by City</h2>
+        <img src="images/carder-dealer-average-salaries-by-city.svg" alt="Horizontal bar chart showing average salaries of gambling dealers by city" class="responsive-svg" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Job Growth Slide Section -->
+    <section id="job-growth-slide" class="svg-section">
+      <div class="container">
+        <h2>Dealer Job Growth Overview</h2>
+        <img src="images/dealer-job-growth-slide.svg" alt="Slide illustrating job growth for dealers" class="responsive-svg" loading="lazy">
       </div>
     </section>
 
@@ -125,8 +155,8 @@
       <div class="container">
         <h2>Our Partners</h2>
         <div class="partner-logos">
-          <img src="columbia-college-logo2.png" alt="Columbia College Logo">
-          <img src="logo-mjc-h.png" alt="MJC High School Logo">
+          <img src="images/columbia-college-logo2.png" alt="Columbia College Logo">
+          <img src="images/logo-mjc-h.png" alt="MJC High School Logo">
           <!-- Add more partner logos as needed -->
         </div>
       </div>
