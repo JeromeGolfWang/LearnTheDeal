@@ -23,12 +23,6 @@
   <!-- Lightbox2 CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
   
-  <!-- Defer JavaScript to improve load times -->
-  <script src="js/script.js" defer></script>
-  
-  <!-- Lightbox2 JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" defer></script>
-  
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
   {
@@ -135,7 +129,7 @@
     <!-- Data Visualizations Section -->
     <section id="data-visualizations" class="data-section">
       <div class="container">
-        <h2>Job Market Outlook</h2>
+        <h2>Data Visualizations</h2>
         <div class="gallery">
           <!-- Thumbnail 1 -->
           <div class="thumbnail">
@@ -213,5 +207,15 @@
       </div>
     </div>
   </footer>
+
+  <!-- Lightbox2 Initialization (Optional Customizations) -->
+  <script>
+    // You can add Lightbox2 custom configurations here if needed
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'albumLabel': "Image %1 of %2"
+    })
+  </script>
 </body>
 </html>
