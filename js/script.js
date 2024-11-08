@@ -4,7 +4,8 @@ function handleSubmit(event) {
 
   const formData = new FormData(event.target);
 
-  fetch(window.location.pathname, { // Use the current page as the endpoint
+  // Submit to the same page (where the Worker is set up)
+  fetch(window.location.href, { // Use the current page as the endpoint
     method: 'POST',
     body: formData,
   })
