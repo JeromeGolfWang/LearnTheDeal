@@ -41,7 +41,7 @@ function handleSubmit(event) {
       }
     })
     .then(responseText => {
-      alert(responseText); // Show the response from the server
+      alert(responseText); // Show the success message
       event.target.reset(); // Reset the form
     })
     .catch(error => {
