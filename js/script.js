@@ -26,14 +26,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Contact Form Submission Handling
 function handleSubmit(event) {
   event.preventDefault();
-  const name = event.target.querySelector('input[type="text"]').value.trim();
-  const email = event.target.querySelector('input[type="email"]').value.trim();
-  const message = event.target.querySelector('textarea').value.trim();
+  const formData = new FormData(event.target);
 
-  if (name === '' || email === '' || message === '') {
-    alert('Please fill in all fields.');
-    return;
-  }
+  fetch('/contact', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    if (response.ok) {
+      alert('Thank you for your message! We will get back to you soon.');
+      event.target.reset();
+    } else {
+      alert('There was a problem submitting your message. Please try again later.');
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert('There was a problem submitting your message. Please try again later.');
+  });
+}
 
   // Here you can add code to handle form submission, e.g., send data to a server
   // For demonstration, we'll just show a success message
