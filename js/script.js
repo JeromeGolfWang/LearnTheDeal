@@ -4,16 +4,17 @@ function handleSubmit(event) {
 
   const formData = new FormData(event.target);
 
-  // Submit to the same page (where the Worker is set up)
-  fetch(window.location.href, { // Use the current page as the endpoint
+  // Submit to the correct endpoint (make sure it's the one your Worker is handling)
+  fetch('https://learnthedeal.pages.dev/contact', { // Specify the endpoint your Worker listens to
     method: 'POST',
     body: formData,
   })
     .then(response => {
+      console.log('Response status:', response.status); // Log the response status
       if (response.ok) {
         return response.text(); // Assuming the response is plain text
       } else {
-        throw new Error('Network response was not ok');
+        throw new Error('Network response was not ok: ' + response.statusText);
       }
     })
     .then(responseText => {
