@@ -5,58 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Learn the Deal offers a specialized dealer training program designed to prepare motivated job seekers for the Gaming & Hospitality industry.">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7YCG526X2S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7YCG526X2S');
-</script>
-<title>Learn the Deal - Dealer Training Program</title>
-  
-  <!-- Font Awesome Kit Script -->
-  <script src="https://kit.fontawesome.com/7dbdcd1376.js" crossorigin="anonymous"></script>
-  
-  <!-- Lightbox2 CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-  
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
-  
-  <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "Learn the Deal",
-      "url": "https://learnthedeal.pages.dev/",
-      "logo": "https://learnthedeal.pages.dev/images/learn-the-deal-logo.png",
-      "description": "Specialized dealer training program for the Gaming & Hospitality industry.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "info@learnthedeal.com",
-        "contactType": "Customer Service",
-        "telephone": "+1-209-801-2533",
-        "areaServed": "US",
-        "availableLanguage": ["English"]
-      },
-      "sameAs": [
-        "https://facebook.com/learnthedeal",
-        "https://twitter.com/learnthedeal",
-        "https://instagram.com/learnthedeal"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Casino Ave",
-        "addressLocality": "Las Vegas",
-        "addressRegion": "NV",
-        "postalCode": "89109",
-        "addressCountry": "US"
-      }
-    }
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YCG526X2S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7YCG526X2S');
   </script>
+  <title>Learn the Deal - Dealer Training Program</title>
+  <script src="https://kit.fontawesome.com/7dbdcd1376.js" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -80,7 +39,26 @@
       </button>
     </nav>
   </header>
-
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="logo">
+        <a href="#">
+          <img src="images/learn-the-deal-logo.png" alt="Learn the Deal Logo" class="logo-img">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
   <main>
     <!-- Hero Section -->
     <section class="hero">
@@ -173,38 +151,26 @@
   </main>
 
   <!-- Footer / Contact Section -->
-  <footer id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Have any questions? Feel free to reach out to us.</p>
-      <form class="contact-form" onsubmit="handleSubmit(event)" action="/" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="cta-button">Send Message</button>
-      </form>
-      <div class="social-media">
-        <a href="https://facebook.com/learnthedeal" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com/learnthedeal" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-        <a href="https://instagram.com/learnthedeal" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+    <footer id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have any questions? Feel free to reach out to us.</p>
+        <form class="contact-form" onsubmit="handleSubmit(event)" action="/contact" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
+        <div class="social-media">
+          <a href="https://facebook.com/learnthedeal" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/learnthedeal" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/learnthedeal" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </main>
 
-  <!-- Lightbox2 JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
-  <!-- Lightbox2 Initialization (Optional Customizations) -->
-  <script>
-    // You can add Lightbox2 custom configurations here if needed
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true,
-      'albumLabel': "Image %1 of %2"
-    })
-  </script>
-
-  <!-- Custom Script -->
   <script src="js/script.js"></script>
 </body>
 </html>
