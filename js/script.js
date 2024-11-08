@@ -5,7 +5,7 @@ function handleSubmit(event) {
     const formData = new FormData(event.target);
 
     // Submit to the correct endpoint
-    fetch('/contact', { // Use the correct endpoint for the Worker
+    fetch('/contact', { // Make sure this matches the worker's expected endpoint
         method: 'POST',
         body: formData,
     })
