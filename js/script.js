@@ -3,6 +3,14 @@ function handleSubmit(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
     const formData = new FormData(event.target);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+
+    if (!name || !email || !message) {
+        alert('Please fill out all fields.');
+        return;
+    }
 
     // Submit to the correct endpoint
     fetch('/contact', { // Make sure this matches the worker's expected endpoint
