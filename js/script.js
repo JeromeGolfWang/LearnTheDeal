@@ -7,7 +7,7 @@ function handleSubmit(event) {
 
   const body = `${name}|${email}|${message}`; // Plain text format
 
-  fetch('/contact', {
+  fetch('https://learnthedeal.pages.dev/contact', {
     method: 'POST',
     headers: {
       'Content-Type': 'text/plain'
