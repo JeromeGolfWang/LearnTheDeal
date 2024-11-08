@@ -5,7 +5,7 @@ function handleSubmit(event) {
   const formData = new FormData(event.target);
 
   // Submit to the correct endpoint (make sure it's the one your Worker is handling)
-  fetch('https://learnthedeal.pages.dev/contact', { // Specify the endpoint your Worker listens to
+  fetch(window.location.href, { // Use the current page as the endpoint
     method: 'POST',
     body: formData,
   })
