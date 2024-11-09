@@ -10,7 +10,7 @@ function handleSubmit(event) {
     const body = `${name}|${email}|${message}`;
 
     // Submit to the correct endpoint
-    fetch('/contact', {
+    fetch('https://learnthedeal.pages.dev', {
         method: 'POST',
         body: body,
         headers: {
