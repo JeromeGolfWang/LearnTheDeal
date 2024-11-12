@@ -10,7 +10,7 @@ function handleSubmit(event) {
     const body = `${name}|${email}|${message}`;
 
     // Submit to the correct endpoint using PUT to the root path
-    fetch('https://learnthedeal.pages.dev/', { // Update to the root URL
+    fetch(window.location.origin, {  // Using window.location.origin (no need to hardcode)
         method: 'PUT',
         body: body,
         headers: {
