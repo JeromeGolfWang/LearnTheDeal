@@ -9,9 +9,9 @@ function handleSubmit(event) {
     // Construct the body to send as plain text
     const body = `${name}|${email}|${message}`;
 
-    // Submit to the correct endpoint using PUT to the root path
+    // Submit to the correct endpoint using POST to the root path
     fetch(window.location.origin, {  // Using window.location.origin (no need to hardcode)
-        method: 'PUT',
+        method: 'POST',
         body: body,
         headers: {
             'Content-Type': 'text/plain'
