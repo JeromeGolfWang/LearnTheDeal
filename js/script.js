@@ -9,8 +9,8 @@ function handleSubmit(event) {
     // Construct the body to send as plain text
     const body = `${name}|${email}|${message}`;
 
-    // Submit to the correct endpoint using PUT
-    fetch('https://learnthedeal.pages.dev/contact', {
+    // Submit to the correct endpoint using PUT to the root path
+    fetch('https://learnthedeal.pages.dev/', { // Update to the root URL
         method: 'PUT',
         body: body,
         headers: {
